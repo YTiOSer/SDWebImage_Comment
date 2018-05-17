@@ -474,7 +474,7 @@ completedBlock(image, error, cacheType, url);
 - (void)sd_setIndicatorStyle:(UIActivityIndicatorViewStyle)style;
 ```
 4. `SDWebImage` 在加载图片网络请求的 `NSURLConnection` 的代理中对httpCode 做了判断，当 httpCode 为 304 的时候放弃下载，读取缓存,如果遇到304请求需要请求的课修改代码, 具体代码如下:
-![](https://upload-images.jianshu.io/upload_images/8283020-17512971f62582af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/8283020-17512971f62582af.png)
 
 - ### 总结
 `SDWebImage` 是一个非常好的图片加载框架，提供的使用方法和接口对开发者来说非常友好。其内部实现多是采用 block 的方式来实现回调，代码阅读起来可能没有那么直观, 但是使用起来非常便捷。
